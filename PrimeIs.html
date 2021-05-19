@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetPrime</title>
+</head>
+<body>
+<script>
+    let numberTill = 10000;
+    let n = 2;
+    while (n < numberTill) {
+        if (IsPrime(n) == 1) {
+            document.write(n + "<br>")
+        }
+        n++
+    }
+
+    function IsPrime(number) {
+        let prime = 1;
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0 && number > 2) {
+                prime = 0;
+            }
+        }
+        return prime
+    }
+</script>
+</body>
+</html>
