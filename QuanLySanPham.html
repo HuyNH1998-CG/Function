@@ -37,6 +37,7 @@
     function DisplayProductList() {
         let table;
         table = "<table width='500' cellspacing='0' cellpadding='0'>";
+        table += "<tr> <td colspan='2'> ProductName</td> <td style='color: red'>" + kho.length + "</td></tr>"
         let i = 0;
         while (i < kho.length) {
             table += "<tr id='Item Row'>";
