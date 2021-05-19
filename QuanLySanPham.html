@@ -23,15 +23,16 @@
         alert("Ban da them " + Item)
     }
 
-    function EditProduct() {
-        let NewName = prompt("New Name");
-        document.getElementById("Item").innerHTML = NewName
+    function EditProduct(num) {
+        kho[num] = prompt("Newname")
+        DisplayProductList()
 
     }
 
-    function DeleteProduct() {
-        let Row = ""
-        document.getElementById("Item Row").innerHTML = Row
+    function DeleteProduct(num) {
+        kho.pop(num);
+        DisplayProductList()
+
     }
 
     function DisplayProductList() {
@@ -42,8 +43,8 @@
         while (i < kho.length) {
             table += "<tr id='Item Row'>";
             table += "<td> <p id='Item'>" + kho[i] + "</p></td>";
-            table += "<td><button type='button' onclick='EditProduct()' style='background: forestgreen;color: white'>Edit</button></td>";
-            table += "<td><button type='button' onclick='DeleteProduct()' style='background: forestgreen;color: white'>Delete</button></td>";
+            table += "<td><button type='button' onclick='EditProduct("+i+")' style='background: forestgreen;color: white'>Edit</button></td>";
+            table += "<td><button type='button' onclick='DeleteProduct("+i+")' style='background: forestgreen;color: white'>Delete</button></td>";
             table += "</tr>";
             i++
         }
