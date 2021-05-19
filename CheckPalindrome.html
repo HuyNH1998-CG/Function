@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckPalin</title>
+</head>
+<body>
+<script>
+    // let str = prompt('Enter String');
+    // let value = CheckPalindrome()
+    //
+    //  function CheckPalindrome() {
+    //     let limit = str.length;
+    //      for (let i = 0; i < limit / 2; i++) {
+    //            if (str[i] !== str[limit - 1 - i]) {
+    //             return "Is  not Palindrome"
+    //           }
+    //       }
+    //       return "Is Palindrome"
+    //   }
+    //
+    //   console.log(value)
+
+    function CheckPalindrome() {
+        let value = str.split('');
+        let reversevalue = value.reverse();
+        let reversearr = reversevalue.join('');
+        if (str == reversearr) {
+            console.log('Is a Palindrome')
+        } else {
+            console.log('Is not a Palindrome')
+        }
+    }
+    let str = prompt('Enter String')
+    CheckPalindrome()
+</script>
+</body>
+</html>
