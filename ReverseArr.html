@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<script>
+    function Reverser() {
+        let arr = []
+        let arrLimit = +prompt("Nhap gioi han mang so");
+        for (let i = 0; i < arrLimit; i++) {
+            arr.push(+prompt("Nhap so trong mang cua ban"))
+            alert(arr)
+        }
+        arr.reverse()
+        alert(arr)
+    }
+    Reverser()
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim Ky Tu</title>
+</head>
+<body>
+<input type="text" id="Texted">
+<button type="button" onclick="Find()"> Tim</button>
+<script>
+    function Find() {
+        let val = document.getElementById("Texted").value;
+        let arr = val.split('');
+        alert(arr + " ")
+        let tocheck = prompt("Nhap Ky Tu can tim");
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (tocheck == arr[i]) {
+                count += 1
+            }
+        }
+        alert(tocheck + " Xuat Hien " + count + " Lan")
+    }
+</script>
+</body>
+</html>

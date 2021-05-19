@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Duong ?</title>
+</head>
+<body>
+<label>Nhap So Vao Day</label>
+<input type="text" id="Number">
+<button type="button" onclick="Start()"> Bam Vao Day De Kiem Tra So Duong</button>
+<script>
+  function IsSoDuong(num) {
+    let duong = false;
+    if (num > 0) {
+      duong = true;
+    }
+    return duong
+  }
+  function Start(val) {
+    val = parseInt(document.getElementById("Number").value);
+    if (IsSoDuong(val)){
+      alert(val + " La So Duong")
+    } else{
+      alert(val + " Khong Phai So Duong")
+    }
+  }
+</script>
+</body>
+</html>

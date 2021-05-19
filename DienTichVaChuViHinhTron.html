@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dien Tich va Chu Vi Hinh Tron</title>
+</head>
+<body>
+<label>Nhap ban kinh hinh tron</label>
+<input type="text" id="R"><br>
+<button type="button" onclick="TinhDienTich()">Dien Tich Hinh Tron</button>
+<br>
+<button type="button" onclick="TinhChuVi()">Chu Vi Hinh Tron</button>
+<br>
+<p id="result"></p>
+<script>
+    let result
+    function TinhDienTich() {
+        let bankinh = parseInt(document.getElementById('R').value);
+        result = bankinh ** 2 * 3.14;
+        document.getElementById("result").innerHTML = result
+    }
+
+    function TinhChuVi() {
+        let bankinh = parseInt(document.getElementById('R').value);
+        result = (bankinh * 2) * 3.14;
+        document.getElementById("result").innerHTML = result
+    }
+</script>
+</body>
+</html>

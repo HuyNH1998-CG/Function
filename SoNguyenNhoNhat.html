@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Nguyen Nho Nhat</title>
+</head>
+<body>
+<script>
+    function SoNguyenNhoNhat() {
+        let arr = []
+        for (let i = 0; i < 3; i++) {
+            arr.push(+prompt("Nhap so."))
+        }
+        let min = arr[0]
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] < min) {
+                min = arr[j]
+            }
+        }
+        document.write(min)
+    }
+    SoNguyenNhoNhat()
+</script>
+</body>
+</html>
