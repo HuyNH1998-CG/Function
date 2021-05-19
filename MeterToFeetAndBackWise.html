@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feet to Meter Because everyone Use Meter</title>
+</head>
+<body>
+<p>
+    <label>Input Meter</label>
+    <input type="number" id="InputMeter" placeholder="Meter"
+           oninput="UnitConvertToFeet(this.value)"
+           onchange="UnitConvertToFeet(this.value)">
+</p><br>
+<p>Feet = <span id="DisplayFeet"></span></p><br>
+<p>
+    <label>Input Feet</label>
+    <input type="number" id="Feet" placeholder="Feet"
+           oninput="UnitConvertToMeter(this.value)"
+           onchange="UnitConvertToMeter(this.value)">
+</p><br>
+<p>Meter = <span id="DisplayMeter"></span></p>
+<script>
+    function UnitConvertToFeet(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("DisplayFeet").innerHTML = 3.279 * valNum + " Feet"
+    }
+
+    function UnitConvertToMeter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("DisplayMeter").innerHTML = 0.305 * valNum + " Meter"
+    }
+</script>
+</body>
+</html>
