@@ -10,17 +10,16 @@
 <form>
     <input type="text" id="Input" placeholder="New Product">
     <button type="button" onclick="AddProduct()" style="background: forestgreen;color: white">Add</button>
-    <button type="button" onclick="DisplayProductList()" style="background: forestgreen;color: white">Display</button>
 </form>
-<h2>Display All Product</h2>
+<h2>Products</h2>
 <div id="Display"></div>
 <script>
     let kho = [];
-
+    DisplayProductList()
     function AddProduct(Item) {
         Item = document.getElementById("Input").value;
         kho.push(Item);
-        alert("Ban da them " + Item)
+        DisplayProductList()
     }
 
     function EditProduct(num) {
