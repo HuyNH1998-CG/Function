@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarName</title>
+</head>
+<body>
+<p onclick="Starter()">Click to Input a Star Name</p>
+<script>
+  let Star1 = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+  let Star2 = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+  function Starter(val) {
+    val = prompt("Input Star Name");
+    Checker(val)
+  }
+  function Checker(str){
+    for (let i = 0 ; i < Star1.length; i++) {
+      if (str === Star1[i]) {
+        alert(str + " Is On " + Star2[i])
+      }
+      else {
+        alert("404 Star Not Found ");
+        break;
+      }
+    }
+  }
+</script>
+</body>
+</html>

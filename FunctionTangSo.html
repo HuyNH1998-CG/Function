@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tang So</title>
+</head>
+<body>
+<input type="text" id="Here">
+<button type="button" onclick="IncreaseHere()"> Click</button>
+<p id="Out"></p>
+<script>
+  function IncreaseHere() {
+    let result;
+    let a = document.getElementById("Here").value;
+    let b = parseInt(a);
+    result = b + 1;
+    document.getElementById("Out").innerHTML = "Result is " + result
+  }
+</script>
+</body>
+</html>
